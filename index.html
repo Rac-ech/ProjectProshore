@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Roboto:ital,wght@0,100;0,400;0,500;1,900&family=Titillium+Web:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <section class="header">
+      <nav>
+        <a href="index.html"><img src="images/rachanlogo.png" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">COURSE</a></li>
+            <li><a href="#">BLOG</a></li>
+            <li><a href="#">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+
+      <div class="text-box">
+        <h1><marquee>Rachan's Portfolio</marquee></h1>
+        <p>
+          Developing a website always comes up with a design. So, designing must
+          be your first priority.
+        </p>
+        <a href="index.html" class="hero-btn">Visit here</a>
+      </div>
+    </section>
+
+    <!----------Course---------->
+
+    <section class="course">
+      <h1><b>My Interests</b></h1>
+      <p>
+        My interests are slightly spotlighted below.
+      </p>
+
+      <div class="row">
+        <div class="course-col">
+          <h3><b>Digital Marketing</b></h3>
+          <img src="images/web.png"/>
+          <p>
+            At a high level, digital marketing refers to advertising delivered
+            through digital channels such as search engines, websites, social
+            media, email, and mobile apps. Using these online media channels,
+            digital marketing is the method by which companies endorse goods,
+            services, and brands.
+          </p>
+        </div>
+        <div class="course-col">
+          <h3><b>Web Design & Development</b></h3>
+          <img src="images/graphic.png"/>
+          <p>
+            Despite requiring very different skill sets, web design and
+            development are sometimes automatically associated with each other.
+            Although this is not entirely wrong (as we will explain later) it is
+            also not completely true. 
+          </p>
+        </div>
+        <div class="course-col">
+          <h3><b>SEO</b></h3>
+          <img src="images/SEO.png"/>
+          <p>
+            SEO means Search Engine Optimization and is the process used to
+            optimize a website's technical configuration, content relevance and
+            link popularity so its pages can become easily findable, more
+            relevant and popular towards user search queries, and as a
+            consequence, search engines rank them better.
+          </p>
+        </div>
+      </div>
+    </section>
+    <hr>
+
+    <!--------About Me Section-------->
+
+    <section class="about">
+      <h1><b>ABOUT ME</b></h1>
+      <p>
+        Basically, I'm a student of BSc.CSIT 8th Semester currently. I'm engaged
+        in coding and music sideways. The following places were recently visited by me.
+      </p>
+
+      <div class="row">
+        <div class="about-col">
+          <a href="#"><img src="images/lumbini.jpg" alt="something" />
+          <div class="layer">
+            <h3>Lumbini, Rupandehi</h3>
+          </a>
+          </div>
+        </div>
+        <div class="about-col">
+          <a href="#"><img src="images/bw.jpg" alt="something" />
+          <div class="layer">
+            <h3>Bijulibazar, Kathmandu</h3>
+          </a>
+          </div>
+        </div>
+        <div class="about-col">
+          <a href="#"><img src="images/music.jpg" alt="something" />
+          <div class="layer">
+            <h3>Godawari, Kathmandu</h3>
+          </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr>
+
+    <!-------Call To Action------->
+
+    <section class="cta">
+      <h1>Connect with me if any queries</h1>
+      <a href="form.html" class="hero-btn">CONTACT ME</a>
+    </section>
+
+
+    <!-------Footer------->
+    
+    <section class="footer">
+      <h4>Social Medias</h4>
+      <p>
+        These are social media platforms where you can find me.
+      </p>
+      <div class="icons">
+        <a href="https://www.facebook.com/rachan.nepal.71"><i class="bi bi-facebook">Facebook</i></a>
+        <a href="https://twitter.com/RachanNepal"><i class="bi bi-twitter">Twitter</i></a>
+        <a href="https://www.instagram.com/racech_chelsea/"><i class="bi bi-instagram">Instagram</i></a>
+        <a href="https://www.linkedin.com/in/rachan-nepal-271a58189/"><i class="bi bi-linkedin">LinkedIn</i></a>
+      </div>
+    </section>
+
+    <!----------JavaScript for Toggle Menu--------->
+
+    <script>
+      var navLinks = document.getElementById("navLinks");
+
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
